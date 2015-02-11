@@ -22,7 +22,8 @@
 
 
 .content .filters,
-.content .results {
+.content .results,
+.content .saved-sets {
     border: 1px solid black;
     display: inline-block;
     height: 500px;
@@ -51,9 +52,23 @@
     width: 95%;
 }
 
+.content .vis-list .data-selected {
+    border: 1px solid black;
+    display: inline-block;
+    height: 500px;
+    padding: 10px;
+    vertical-align: top;
+    width: 20%;
+}
+.content .vis-list ul {
+    display: inline-block;
+    width: 75%;
+}
+
 .content .vis-item {
     border: 1px solid black;
     padding: 10px;
+    margin-bottom: 10px;
 }
 
 .content .vis-item img {
