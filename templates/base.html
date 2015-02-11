@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+{% autoescape true %}
+<html>
+    <!-- [START head_html] -->
+    <head>
+        <link type="text/css" rel="stylesheet" href="/css/reset.css" />
+        <link type="text/css" rel="stylesheet" href="/css/basic.css" />
+
+        <title>CREX</title>
+    </head>
+    <!-- [END head_html] -->
+    <body>
+        <div class="header">
+            <h1>CREX</h1>
+
+            <ul>
+                <li><a href="/explore">Explore</a></li>
+                <li><a href="/vis">Visualizations</a></li>
+            </ul>
+
+            <ul class="right-side">
+                <li><a href="/signin">Sign In</a></li>
+            </ul>
+        </div>
+        <div class="content">
+            {% block content %}
+
+            {% endblock %}
+        </div>
+    </body>
+</html>
+{% endautoescape %}
